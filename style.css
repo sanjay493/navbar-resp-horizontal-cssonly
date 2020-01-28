@@ -1,0 +1,54 @@
+
+/* CSS for mobile first */
+
+/* ul is used for list style and ul blocks decoration*/
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    text-align: center;
+    list-style: none;
+}
+/* li is used for list topography only*/
+
+nav li{
+    font-family: cursive;
+    font-size: 1.2em;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #888;
+}
+/* text decoration and display is kept as block so that the click is active throughout the block unless only to  link text*/
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+nav a:hover{
+    background: #005f5f;
+    color:black;
+    transition: .3s background;
+}
+nav a:active{
+    background-color: #fff;
+    color:#444;
+}
+
+@media screen and (min-width:600px){
+ 
+    nav li{
+        display: inline-block;
+    }
+
+    /* learned to place 2 vertical pipe from Jen Kramer  https://github.com/jen4web/jen4web.github.io and  CSS Snippets by  Lisa  https://wwwcss-snippets.com/simple-horizontal-navigation/*/
+nav li:not(:last-child)::after{
+        content: " | | ";
+    }
+
+    /* the above after effect don't work if we don't place display property os nav a tag as inline or inline-block*/
+    nav a{
+        display: inline-block;
+    }
+}
