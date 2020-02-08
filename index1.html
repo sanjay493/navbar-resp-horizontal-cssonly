@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/fe77521a69.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Anton|Josefin+Sans|Lexend+Deca|Livvic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <title>Navbar Practice1</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-brand"><a href="">KS</a></div>
+       <div class="toggle-collapse">
+           <div class="toggle-icon">
+               <i class="fas fa-bars"></i>
+           </div>
+       </div>
+        <div>
+        <ul class="nav-item">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Dishes</a></li>
+            <li><a href="#">Specialist</a></li>
+            <li><a href="#">Awarded</a></li>
+        </ul>
+        </div>
+        <div class="social text-gray">
+            <a href="#"><i class="fab fa-facebook-f"></i> </a>
+            <a href="#"><i class="fab fa-twitter"></i> </a>
+            <a href="#"><i class="fab fa-pinterest-p"></i> </a>
+            <a href="#"><i class="fab fa-instagram"></i> </a>
+        </div>
+    </nav>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    
+    <script>
+    $(document).ready(function(){
+    $nav = $('nav');
+    $toggleCollapse = $('.toggle-collapse');
+    // Click Event on toggle menu
+
+    $toggleCollapse.click(function(){
+$nav.toggleClass('collapse');
+    });
+});
+    </script>
+</body>
+</html>
