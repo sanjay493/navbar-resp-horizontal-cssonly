@@ -61,7 +61,7 @@ nav{
     display: flex;
     justify-content: end;
     padding: 2.4rem;
-    font: 1.2rem;
+    font-size: 1.2rem;
 }
 .collapse{
     height: 25rem;
